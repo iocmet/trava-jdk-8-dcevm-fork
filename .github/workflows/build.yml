@@ -11,5 +11,6 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
     - name: Run windows build
       run: ./build_windows.sh
