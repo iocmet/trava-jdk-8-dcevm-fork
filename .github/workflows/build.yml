@@ -1,0 +1,16 @@
+name: Go
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: windows-2019
+    steps:
+    - name: Patch pkg-config bug
+      shell: pwsh
+      run: ./build-windows.ps1
