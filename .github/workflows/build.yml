@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run windows build
-      run: ./build_windows.sh
+      run: chmod +777 build_windows.sh && ./build_windows.sh
