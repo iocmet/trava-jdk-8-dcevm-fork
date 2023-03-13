@@ -11,6 +11,6 @@ jobs:
     name: Build
     runs-on: windows-2019
     steps:
-    - name: Patch pkg-config bug
+    - name: Run windows build
       shell: pwsh
-      run: ./build-windows.ps1
+      run: ./build_windows.ps1
