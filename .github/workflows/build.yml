@@ -9,8 +9,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: windows-2019
+    runs-on: ubuntu-latest
     steps:
     - name: Run windows build
-      shell: pwsh
-      run: ./build_windows.ps1
+      run: ./build_windows.sh
